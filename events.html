@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta tags and page configuration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الفعاليات | دليل الفعاليات</title>
+
+  <!-- Bootstrap RTL Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <!-- Google Fonts - Cairo -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+  <!-- Site Header Navigation -->
+  <header id="siteHeader" class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🎓 دليل فعاليات الجامعة الافتراضية</a>
+        <div class="navbar-nav me-auto">
+          <a class="nav-link" href="index.html">الرئيسية</a>
+          <a class="nav-link active" href="events.html">الفعاليات</a>
+          <a class="nav-link" href="event.html">تفاصيل الفعالية</a>
+
+          <a class="nav-link" href="about.html">عن الدليل</a>
+          <a class="nav-link" href="contact.html">اتصل بنا</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="banner-label">لكل اهتمام تجربة</span>
+        <h1>اكتشف فعاليتك القادمة</h1>
+
+        <p>
+          تصفّح الأنشطة الثقافية والرياضية والفنية،
+          وابحث عن تجربة تناسب اهتماماتك.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="section-space">
+      <div class="container">
+        <div class="panel panel-accent">
+          <h2>ابحث عمّا يناسبك</h2>
+
+          <p class="text-muted mb-4">
+            تتحدث النتائج مباشرة عند تغيير خيارات البحث.
+          </p>
+
+          <form id="filterForm" class="row g-3">
+            <div class="col-md-6 col-lg-3">
+              <label for="searchInput" class="form-label">
+                كلمة البحث
+              </label>
+
+              <input id="searchInput" type="search" class="form-control" placeholder="عنوان أو وصف الفعالية">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <label for="categoryFilter" class="form-label">
+                التصنيف
+              </label>
+
+              <select id="categoryFilter" class="form-select">
+                <option value="">كل التصنيفات</option>
+                <option value="ثقافة">ثقافة</option>
+                <option value="رياضة">رياضة</option>
+                <option value="موسيقى">موسيقى</option>
+                <option value="عائلي">عائلي</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <label for="dateFilter" class="form-label">
+                التاريخ
+              </label>
+
+              <input id="dateFilter" type="date" class="form-control">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <label for="locationFilter" class="form-label">
+                الموقع
+              </label>
+
+              <select id="locationFilter" class="form-select">
+                <option value="">كل المواقع</option>
+                <option value="دمشق">دمشق</option>
+                <option value="حلب">حلب</option>
+                <option value="حمص">حمص</option>
+                <option value="عبر الإنترنت">عبر الإنترنت</option>
+              </select>
+            </div>
+
+            <div class="col-12 text-end mt-4">
+              <button id="resetFilters" type="button" class="btn btn-outline-primary">
+                مسح الفلاتر
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Events Grid Section -->
+    <section class="section-space pt-0">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">اكتشف • شارك • استمتع</span>
+            <h2>الفعاليات المتاحة</h2>
+          </div>
+
+          <p id="resultsCount" class="results-count mb-0" role="status"></p>
+        </div>
+
+        <div id="eventsGrid" class="row g-4"></div>
+
+        <div id="noResults" class="alert alert-info mt-4" role="status" hidden>
+          لا توجد فعاليات تطابق بحثك. جرّب تغيير الفلاتر.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer id="siteFooter" class="site-footer bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="fw-bold mb-1">دليل فعاليات الجامعة الافتراضية السورية - مشروع BWP401</p>
+      <p class="small text-secondary mb-0">جميع الحقوق محفوظة © 2026</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/JS/main.js"></script>
+</body>
+
+</html>

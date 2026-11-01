@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta tags and page configuration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>اتصل بنا | دليل الفعاليات</title>
+
+  <!-- Bootstrap RTL Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <!-- Google Fonts - Cairo -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+  <!-- Site Header Navigation -->
+  <header id="siteHeader" class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🎓 دليل فعاليات الجامعة الافتراضية</a>
+        <div class="navbar-nav me-auto">
+          <a class="nav-link" href="index.html">الرئيسية</a>
+          <a class="nav-link" href="events.html">الفعاليات</a>
+          <a class="nav-link" href="event.html">تفاصيل الفعالية</a>
+          <a class="nav-link" href="about.html">عن الدليل</a>
+          <a class="nav-link active" href="contact.html">اتصل بنا</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="banner-label">فكرتك تهمّنا</span>
+
+        <h1>يسعدنا نسمع منك</h1>
+
+        <p>
+          عندك استفسار أو اقتراح لفعالية؟
+          اكتب التفاصيل في نموذج التواصل.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Methods Section -->
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="panel panel-accent">
+              <h2>نموذج التواصل</h2>
+
+              <p class="text-muted mb-4">
+                جميع الحقول مطلوبة.
+              </p>
+
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">
+                    الاسم
+                  </label>
+
+                  <input id="contactName" name="name" type="text" class="form-control" autocomplete="name"
+                    placeholder="اكتب اسمك" maxlength="80" aria-describedby="nameError" required>
+
+                  <div id="nameError" class="invalid-feedback">
+                    اكتب اسمًا من حرفين على الأقل.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">
+                    البريد الإلكتروني
+                  </label>
+
+                  <input id="contactEmail" name="email" type="email" class="form-control" autocomplete="email"
+                    placeholder="name@example.com" aria-describedby="emailError" required>
+
+                  <div id="emailError" class="invalid-feedback">
+                    اكتب بريدًا إلكترونيًا صحيحًا.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">
+                    الرسالة
+                  </label>
+
+                  <textarea id="contactMessage" name="message" class="form-control" rows="6"
+                    placeholder="اكتب سؤالك أو اقتراحك..." maxlength="2000" aria-describedby="messageError"
+                    required></textarea>
+
+                  <div id="messageError" class="invalid-feedback">
+                    اكتب رسالة من 10 أحرف على الأقل.
+                  </div>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary">
+                  إرسال تجريبي
+                </button>
+
+                <div id="contactStatus" role="status" hidden></div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="panel">
+              <span class="number-mark" aria-hidden="true">✉</span>
+
+              <h2>طرق التواصل</h2>
+
+              <p class="text-muted">
+                يسعدنا استقبال أسئلتك واقتراحاتك.
+              </p>
+
+              <p class="mb-1">
+                <strong>البريد الإلكتروني</strong>
+              </p>
+
+              <a data-email href="mailto:events@svuonline.org">events@svuonline.org</a>
+
+              <hr class="my-4">
+
+              <h3>منصات التواصل</h3>
+
+              <div data-social class="social-links mt-3">
+                <a href="#" class="btn btn-outline-primary btn-sm me-1">Facebook</a>
+                <a href="#" class="btn btn-outline-primary btn-sm">Telegram</a>
+              </div>
+
+              <p class="small text-muted mt-3 mb-0">
+                بيانات وروابط توضيحية للمشروع.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Before Writing Section -->
+    <section class="section-space pt-0">
+      <div class="container">
+        <div class="panel">
+          <h2>قبل كتابة الرسالة</h2>
+
+          <div class="row g-3 text-muted">
+            <div class="col-md-4">
+              اذكر عنوان الفعالية إذا كان سؤالك مرتبطًا بنشاط محدد.
+            </div>
+
+            <div class="col-md-4">
+              عند اقتراح فعالية، وضّح الموعد والمكان والجهة المنظمة.
+            </div>
+
+            <div class="col-md-4">
+              يمكنك الاطلاع على معايير النشر في صفحة عن الدليل.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer id="siteFooter" class="site-footer bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="fw-bold mb-1">دليل فعاليات الجامعة الافتراضية السورية - مشروع BWP401</p>
+      <p class="small text-secondary mb-0">جميع الحقوق محفوظة © 2026</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/JS/main.js"></script>
+</body>
+
+</html>
