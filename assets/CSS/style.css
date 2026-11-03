@@ -596,13 +596,13 @@ footer,
     color: #cbd5e1 !important;
 }
 
-/* إجبار كل العناوين داخل الفوتر أن تظل بيضاء وفاتحة في الوضعين */
+
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
     color: #ffffff !important;
 }
 
-/* توضيح نصوص الشرح والفقرات */
+
 footer p,
 .site-footer p {
     color: #94a3b8 !important;
