@@ -592,44 +592,35 @@ body.dark-mode .badge-family {
 /* 14. Footer Styling */
 footer,
 .site-footer {
-    background-color: var(--bg-surface) !important;
-    color: var(--text-muted) !important;
-    border-top: 1px solid var(--border-color);
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
+    background: #090d16 !important;
+    color: #cbd5e1 !important;
 }
 
-/* حل مشكلة العناوين الغامقة داخل الفوتر */
+/* إجبار كل العناوين داخل الفوتر أن تظل بيضاء وفاتحة في الوضعين */
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
-    color: var(--primary) !important;
-    font-weight: 800;
+    color: #ffffff !important;
 }
 
-/* روابط الفوتر */
+/* توضيح نصوص الشرح والفقرات */
+footer p,
+.site-footer p {
+    color: #94a3b8 !important;
+}
+
+/* روابط الفوتر والبريد */
 .footer-links a,
 .footer-email,
 .social-links a {
-    color: var(--text-main) !important;
+    color: #cbd5e1 !important;
     text-decoration: none;
-    transition: color 0.25s ease, transform 0.25s ease;
-    display: inline-block;
+    transition: color 0.25s ease;
 }
 
 .footer-links a:hover,
 .footer-email:hover,
 .social-links a:hover {
-    color: var(--primary) !important;
-    transform: translateY(-2px);
-}
-@media (max-width: 768px) {
-    .page-banner {
-        padding: 3rem 0 2.5rem;
-        border-radius: 0 0 24px 24px;
-    }
-    .detail-cover {
-        height: 240px;
-    }
+    color: var(--secondary) !important;
 }
 /* Fix Headings and Card Titles in Dark Mode */
 h1, h2, h3, h4, h5, h6,
